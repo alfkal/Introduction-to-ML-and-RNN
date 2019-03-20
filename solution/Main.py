@@ -40,7 +40,7 @@ for i in range(10):
 
 # Initiating our optimizer
 criterion = nn.NLLLoss()
-# TODO: PLay with optimizer and learning rate
+# TODO: Play with optimizer and learning rate
 learning_rate = 0.0005  # If you set this too high, it might explode. If too low, it might not learn
 optimizer = optim.Adam(rnn.parameters(), lr=learning_rate)
 

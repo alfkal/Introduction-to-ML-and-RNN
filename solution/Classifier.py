@@ -9,7 +9,7 @@ class RNN(nn.Module):
         # TODO: you can add new layers to the model and play with different activation functions.
         self.hidden_size = hidden_size
         self.combined_size = hidden_size + input_size
-        self.decrease_size = 128
+        self.decrease_size = hidden_size
 
         self.relu = nn.ReLU()
 

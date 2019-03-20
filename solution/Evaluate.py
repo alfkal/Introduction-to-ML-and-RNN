@@ -30,8 +30,6 @@ def plot_figure(rnn, all_losses, all_categories, category_lines, n_categories):
     # Normalize by dividing every row by its sum
     for i in range(n_categories):
         confusion[i] = confusion[i] / confusion[i].sum()
-    print(confusion.diag())
-    exit()
 
     # Set up plot
     fig = plt.figure()
